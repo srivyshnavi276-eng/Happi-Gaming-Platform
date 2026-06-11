@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&family=Courier+Prime:wght@400;700&family=Oswald:wght@700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --cream: #f5f0e8;
+  --cream-dark: #ede8dc;
+  --green-dark: #1a2e1a;
+  --green-mid: #2d5016;
+  --brown: #6b4c2a;
+  --orange: #c8541a;
+  --red-retro: #b83228;
+  --gold: #c9943a;
+  --border-dashed: 2px dashed #1a2e1a;
+  --font-title: 'Oswald', 'Special Elite', serif;
+  --font-body: 'Courier Prime', 'Courier New', monospace;
+  --font-display: 'Special Elite', serif;
+}
+
+body {
+  background: var(--cream);
+  color: var(--green-dark);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  font-family: var(--font-body);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}

@@ -1,0 +1,115 @@
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--cream);
+  background-image:
+    linear-gradient(rgba(26,46,26,0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(26,46,26,0.06) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.auth-card {
+  width: 460px;
+  background: var(--cream);
+  border: 2px solid var(--green-dark);
+  padding: 44px 40px;
+  position: relative;
+}
+
+.auth-card::before {
+  content: '';
+  position: absolute;
+  inset: 6px;
+  border: 1px dashed rgba(26,46,26,0.3);
+  pointer-events: none;
+}
+
+.auth-card h1 {
+  font-family: var(--font-title);
+  text-align: center;
+  margin-bottom: 8px;
+  color: var(--green-dark);
+  font-size: 32px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
+
+.auth-subtitle {
+  text-align: center;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--brown);
+  margin-bottom: 32px;
+}
+
+.auth-card label {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--green-dark);
+  margin-bottom: 6px;
+  margin-top: 16px;
+  font-weight: 700;
+}
+
+.auth-card input {
+  width: 100%;
+  padding: 13px 14px;
+  margin-bottom: 0;
+  background: var(--cream);
+  border: 2px solid var(--green-dark);
+  color: var(--green-dark);
+  font-family: var(--font-body);
+  font-size: 14px;
+  letter-spacing: 1px;
+  outline: none;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.auth-card input:focus {
+  border-color: var(--orange);
+  background: #fdf8f0;
+}
+
+.auth-card input::placeholder {
+  color: #9a8e7e;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.auth-card button[type="submit"] {
+  width: 100%;
+  padding: 15px;
+  margin-top: 28px;
+  background: var(--green-dark);
+  border: 2px solid var(--green-dark);
+  color: var(--cream);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  transition: 0.25s;
+}
+
+.auth-card button[type="submit"]:hover {
+  background: var(--orange);
+  border-color: var(--orange);
+}
+
+.auth-card .auth-footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 13px;
+  color: var(--brown);
+  letter-spacing: 1px;
+}
+
+.auth-card .auth-footer a {
+  color: var(--orange);
+  font-weight: 700;
+  text-decoration: underline;
+}

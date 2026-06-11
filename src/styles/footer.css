@@ -1,0 +1,79 @@
+.footer {
+  background: var(--green-dark);
+  color: var(--cream);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  padding: 0;
+}
+
+.footer-col {
+  padding: 40px 40px;
+  border-right: 1px solid rgba(255,255,255,0.15);
+}
+
+.footer-col:last-child {
+  border-right: none;
+}
+
+.footer-col .footer-brand {
+  font-family: var(--font-title);
+  font-size: 26px;
+  letter-spacing: 4px;
+  color: var(--cream);
+  margin-bottom: 8px;
+}
+
+.footer-col h3 {
+  font-family: var(--font-body);
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 16px;
+}
+
+.footer-col p, .footer-col a {
+  font-size: 13px;
+  color: rgba(245,240,232,0.7);
+  letter-spacing: 1px;
+  display: block;
+  margin: 8px 0;
+  transition: color 0.2s;
+}
+
+.footer-col a:hover {
+  color: var(--cream);
+}
+
+.footer-bottom {
+  background: #0d1a0d;
+  text-align: center;
+  padding: 14px;
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: rgba(245,240,232,0.5);
+  text-transform: uppercase;
+}
+
+/* Secure ports icons row */
+.footer-ports {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.port-icon {
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgba(255,255,255,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  transition: border-color 0.2s;
+}
+
+.port-icon:hover {
+  border-color: var(--gold);
+}
